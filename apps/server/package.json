@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "db:push": "drizzle-kit push",
+    "auth:gen": "bunx @better-auth/cli@latest generate --config ./src/auth/index.ts --output ./src/database/auth-schema.ts -y"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
+    "@elysiajs/server-timing": "^1.2.1",
+    "@elysiajs/swagger": "^1.2.2",
+    "better-auth": "^1.2.7",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "drizzle-typebox": "^0.3.2",
+    "elysia": "latest",
+    "logixlysia": "^4.2.7",
+    "pg": "^8.15.6"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.14",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.31.1",
+    "oxlint": "^0.16.9"
+  },
+  "module": "src/index.ts",
+  "overrides": {
+    "@sinclair/typebox": "0.34.27"
+  }
+}
