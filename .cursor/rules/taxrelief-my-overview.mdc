@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Overview: TaxRelief MY
+
+## Goal
+A mobile-first app for Malaysians to track eligible tax reliefs, store receipts, estimate taxes, and simplify LHDN filing.
+
+## Frontend (Mobile App)
+- **Framework**: Expo (React Native)
+- **Authentication**: better-auth
+
+### Key Features:
+- Tax relief cards with expandable details
+- Receipt upload with OCR and AI categorization
+- Income & contribution tracking
+- Yearly tax summary
+- Weekly notifications/reminders
+
+## Backend
+- **Framework**: Elysia.js (Bun)
+- **Authentication**: better-auth
+
+### Responsibilities:
+- User account management
+- Secure storage of receipts and metadata
+- Categorization logic and OCR processing (can offload to third-party APIs)
+- Tax calculation logic
+- Notification scheduling
+
+## Resources
+- [LHDN Tax Relief Guide](mdc:https:/www.hasil.gov.my/en/individual/individual-life-cycle/how-to-declare-income/tax-reliefs)

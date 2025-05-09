@@ -1,0 +1,37 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Income Page Features
+
+## Overview
+The Income page allows users to track their earnings, both recurring and one-off, and visualize their income trends.
+
+## Key Functionalities
+
+### 1. Add Recurring Income
+- Users should be able to define income sources that occur regularly (e.g., monthly salary, rental income).
+- Ability to specify:
+    - Income source name/description.
+    - Amount.
+    - Frequency (e.g., daily, weekly, monthly, yearly).
+    - Start date.
+    - End date (optional).
+
+### 2. Add One-Off Manual Income
+- Users should be able to record income that is not regular (e.g., bonus, freelance project payment, gift).
+- Ability to specify:
+    - Income source name/description.
+    - Amount.
+    - Date received.
+
+### 3. Income Visualization
+- A graph (e.g., line chart, bar chart) should display:
+    - **Actual Income**: Sum of all recorded income (both recurring and one-off) over time.
+    - **Projected Income**: Calculated based on recurring income entries, showing expected future earnings.
+- The graph should allow users to view trends over different periods (e.g., monthly, quarterly, yearly).
+
+## Data Considerations
+- Income data should be securely stored.
+- Projections should be clearly distinguished from actual, historical data.
